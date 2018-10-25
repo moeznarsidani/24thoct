@@ -98,7 +98,7 @@ namespace App3
             
             progressBar.Visibility = ViewStates.Visible;
            // List<listItem> mylist = db.abc();
-            if(db.Getallitems().Count<1)
+            if(db.Getallitems().Count<10)
             {
                 GenerateListData();
             }
