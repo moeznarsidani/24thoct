@@ -2210,6 +2210,12 @@ namespace App3
 			// aapt resource value: 0x7f080092
 			public const int action0 = 2131230866;
 			
+			// aapt resource value: 0x7f0800b0
+			public const int action1 = 2131230896;
+			
+			// aapt resource value: 0x7f0800b1
+			public const int action2 = 2131230897;
+			
 			// aapt resource value: 0x7f080064
 			public const int action_bar = 2131230820;
 			
@@ -2243,9 +2249,6 @@ namespace App3
 			// aapt resource value: 0x7f080090
 			public const int action_image = 2131230864;
 			
-			// aapt resource value: 0x7f0800af
-			public const int action_insert = 2131230895;
-			
 			// aapt resource value: 0x7f080003
 			public const int action_menu_divider = 2131230723;
 			
@@ -2261,11 +2264,8 @@ namespace App3
 			// aapt resource value: 0x7f080043
 			public const int action_mode_close_button = 2131230787;
 			
-			// aapt resource value: 0x7f0800ae
-			public const int action_refresh = 2131230894;
-			
-			// aapt resource value: 0x7f0800b0
-			public const int action_settings = 2131230896;
+			// aapt resource value: 0x7f0800b2
+			public const int action_settings = 2131230898;
 			
 			// aapt resource value: 0x7f080091
 			public const int action_text = 2131230865;
@@ -2374,6 +2374,9 @@ namespace App3
 			
 			// aapt resource value: 0x7f080066
 			public const int edit_query = 2131230822;
+			
+			// aapt resource value: 0x7f0800af
+			public const int email = 2131230895;
 			
 			// aapt resource value: 0x7f080021
 			public const int end = 2131230753;
@@ -2521,6 +2524,9 @@ namespace App3
 			
 			// aapt resource value: 0x7f08005d
 			public const int radio = 2131230813;
+			
+			// aapt resource value: 0x7f0800ae
+			public const int refresh = 2131230894;
 			
 			// aapt resource value: 0x7f080035
 			public const int right = 2131230773;
@@ -3133,6 +3139,12 @@ namespace App3
 			// aapt resource value: 0x7f090012
 			public const int abc_toolbar_collapse_description = 2131296274;
 			
+			// aapt resource value: 0x7f09002e
+			public const int action1 = 2131296302;
+			
+			// aapt resource value: 0x7f09002f
+			public const int action2 = 2131296303;
+			
 			// aapt resource value: 0x7f09002a
 			public const int action_settings = 2131296298;
 			
@@ -3147,6 +3159,9 @@ namespace App3
 			
 			// aapt resource value: 0x7f090023
 			public const int character_counter_pattern = 2131296291;
+			
+			// aapt resource value: 0x7f09002d
+			public const int email = 2131296301;
 			
 			// aapt resource value: 0x7f090024
 			public const int password_toggle_content_description = 2131296292;
@@ -3163,8 +3178,14 @@ namespace App3
 			// aapt resource value: 0x7f090028
 			public const int path_password_strike_through = 2131296296;
 			
+			// aapt resource value: 0x7f09002c
+			public const int search = 2131296300;
+			
 			// aapt resource value: 0x7f090013
 			public const int search_menu_title = 2131296275;
+			
+			// aapt resource value: 0x7f09002b
+			public const int share = 2131296299;
 			
 			// aapt resource value: 0x7f090014
 			public const int status_bar_notification_info_overflow = 2131296276;

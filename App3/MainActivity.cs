@@ -11,11 +11,11 @@ using Android.Widget;
 
 namespace App3
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme.NoActionBar", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", MainLauncher = true)]
     public class MainActivity : AppCompatActivity
     {
-        String username = "lambton";
-        String password = "123456";
+        String username = "a";
+        String password = "a";
         TextView topText;
         EditText nameText;
         EditText passText;

@@ -63,7 +63,7 @@ namespace App3
                 case Android.Resource.Id.Home:
                     var intent = new Intent();
                     intent.PutExtra("title", title.Text);
-                    intent.PutExtra("subtitle", subtitle.Text);
+                    i   ntent.PutExtra("subtitle", subtitle.Text);
                     intent.PutExtra("distance", distance.Text);
                     SetResult(Result.Ok, intent);
                     Finish();
@@ -80,15 +80,46 @@ namespace App3
             switch (item.ItemId)
             {
                 case Android.Resource.Id.Home:
-                    listItem obj = new listItem();
-                    var intent = new Intent();
-                    obj.Title = title.Text;
-                    obj.Subtitle = subtitle.Text;
-                    obj.Distance = distance.Text;
-                    db.insert(obj);
-                    intent.PutExtra("item has selected"," "+title.Text+"  "+subtitle.Text+" "+distance.Text);
-                    SetResult(Result.Ok, intent);
-                    Finish();
+
+
+                    if (String.IsNullOrEmpty(title.Text))
+
+                    {
+
+                        title.Error = "Title cannot be empty";
+
+                    }
+
+                    else if (String.IsNullOrEmpty(subtitle.Text))
+
+                    {
+
+                        subtitle.Error = "Subtitle cannot be empty";
+
+                    }
+
+                    else if (String.IsNullOrEmpty(distance.Text))
+
+                    {
+
+                        distance.Error = "Distance cannot be empty";
+
+                    }
+
+                    else
+
+                    {
+                        listItem obj = new listItem();
+                        var intent = new Intent();
+                        obj.Title = title.Text;
+                        obj.Subtitle = subtitle.Text;
+                        obj.Distance = distance.Text;
+                        obj.image();
+                        db.insert(obj);
+                        intent.PutExtra("item has selected", " " + title.Text + "  " + subtitle.Text + " " + distance.Text);
+                        SetResult(Result.Ok, intent);
+                        Finish();
+                    }
                     return true;
 
                 default:

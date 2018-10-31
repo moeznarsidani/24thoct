@@ -41,7 +41,7 @@ namespace App3
         private List<listItem> GenerateListData()
         {
             List<listItem> data = new List<listItem>();
-            for (int i = 0; i < 30; i++)
+            for (int i = 0; i < 5; i++)
             {
 
                 listItem obj = new listItem();
@@ -61,22 +61,33 @@ namespace App3
         {
 
             MenuInflater.Inflate(Resource.Menu.menu1, menu);
-            return base.OnCreateOptionsMenu(menu);
+            return true;
         }
 
 
-        public override bool OnOptionsItemSelected(IMenuItem item)
+       public override bool OnOptionsItemSelected(IMenuItem item)
         {
             switch (item.ItemId)
             {
-                case Resource.Id.action_insert:
-                    var intent = new Intent(this, typeof(DetailView));
-                    StartActivityForResult(intent, DetailViewIntentId);
+                case Resource.Id.add:
+                      var intent = new Intent(this, typeof(DetailView));
+                     StartActivityForResult(intent, DetailViewIntentId);
+                    
                     return true;
 
-                case Resource.Id.action_refresh:
+                case Resource.Id.refresh:
                     Toast.MakeText(this, "Refresh is clicked", ToastLength.Long).Show();
 
+                    return true;
+
+                case Resource.Id.email:
+                    Toast.MakeText(this, "email is clicked", ToastLength.Long).Show();
+
+                    return true;
+
+                case Resource.Id.action1:
+                     intent = new Intent(this, typeof(DetailView));
+                    StartActivityForResult(intent, DetailViewIntentId);
                     return true;
                 default:
                     return base.OnOptionsItemSelected(item);
