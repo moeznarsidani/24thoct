@@ -24,7 +24,7 @@ namespace App3
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
-            topText= FindViewById<TextView>(Resource.Id.topText);
+            topText = FindViewById<TextView>(Resource.Id.topText);
             nameText = FindViewById<EditText>(Resource.Id.EditText1);
             nameText.TextChanged += changeTopText;
             passText = FindViewById<EditText>(Resource.Id.EditText2);
@@ -34,9 +34,10 @@ namespace App3
 
         private void changeTopText(object sender, TextChangedEventArgs e)
         {
-            if (nameText.Text.Length < 10) {
+            if (nameText.Text.Length < 10)
+            {
 
-                topText.Text = "Welcome: "+ nameText.Text;
+                topText.Text = "Welcome: " + nameText.Text;
             }
         }
 
@@ -50,6 +51,27 @@ namespace App3
                 intent.PutExtra("username", nameText.Text);
                 intent.PutExtra("password", passText.Text);
                 StartActivity(intent);
+            }
+            /* else
+             /*{
+                 if (String.IsNullOrEmpty(nameText.Text) || (nameText.Text != username && passText.Text != password))
+
+                 {
+
+                     nameText.Error="fgsgfkhak";
+                 }
+             }*/
+            if (nameText.Text != username || passText.Text != password)
+
+            {
+
+                Android.App.AlertDialog.Builder alert = new Android.App.AlertDialog.Builder(this);
+
+                alert.SetMessage("Emplty or wrong");
+
+                alert.SetNegativeButton("ok", delegate { alert.Dispose(); });
+
+                alert.Show();
             }
         }
     }

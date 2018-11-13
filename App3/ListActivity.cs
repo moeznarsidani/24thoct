@@ -51,7 +51,7 @@ namespace App3
                 obj.Distance = i + " km";
                 obj.Image = "https://picsum.photos/200/200/?" + i;
                 // data.Add(obj);
-                db.insert(obj);
+                db.insert(obj); 
             }
 
             return data;
@@ -98,7 +98,8 @@ namespace App3
         {
             if ((requestCode == DetailViewIntentId) && (resultCode == Result.Ok))
             {
-                Toast.MakeText(this, data.GetStringExtra("title")+" "+ data.GetStringExtra("subtitle")+" "+ data.GetStringExtra("distance"), ToastLength.Long).Show();
+                Toast.MakeText(this, "kjdshjkhdfkj", ToastLength.Long).Show();
+                //  Toast.MakeText(this, data.GetStringExtra("title")+" "+ data.GetStringExtra("subtitle")+" "+ data.GetStringExtra("distance"), ToastLength.Long).Show();
                 showData();
             }
         }

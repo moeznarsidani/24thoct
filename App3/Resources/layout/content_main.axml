@@ -16,16 +16,15 @@
 		<TextView
 		android:text="Welcome to my App"
 		android:layout_width="match_parent"
-		android:textSize="24sp"
+		android:textSize="14sp"
 		android:textColor="#578EF7"
 		android:gravity="center"
 		android:layout_height="wrap_content"
 		android:id="@+id/topText" />
 	<ImageView
 		android:src="@drawable/people"
-		android:layout_height="200dp"
-		android:layout_width="match_parent"
-		android:layout_weight="0.70"	
+		android:layout_height="100dp"
+		android:layout_width="wrap_content"
 		android:layout_gravity="center"
 		android:id="@+id/imageView1" />
 
